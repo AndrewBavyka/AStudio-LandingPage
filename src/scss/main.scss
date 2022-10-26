@@ -1,0 +1,96 @@
+.main {
+
+    // .main__container
+
+    &__container {
+
+        // .main__container_title
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+
+            .title_information {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 123px;
+
+                & p {
+                    padding: 40px 0 33px 0;
+                    line-height: 160%;
+                    width: 70%;
+                }
+
+                .dots-title {
+                    position: relative;
+                    z-index: -1;
+                    top: -30px;
+                    left: -50px;
+                }
+            }
+
+            .test {
+                width: 39%;
+                right: 0;
+                position: absolute;
+
+                .circle-small {
+                    position: absolute;
+                    left: -65px;
+                    top: 0;
+                }
+
+                .title-photo {
+                    max-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .rectangle-small {
+                    position: relative;
+                    left: 60%;
+                    top: -75px;
+                }
+            }
+
+
+        }
+
+
+        &_client {
+            margin-top: 135px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .about-client {
+                & p {
+                    padding-top: 7px;
+                }
+            }
+
+            .client-list {
+                display: flex;
+                align-items: center;
+                gap: 60px;
+            }
+
+        }
+
+        &_assistance {
+            margin-top: 455px;
+
+            .asistance-title {
+                .rectangle-small {
+                    position: relative;
+                    top: 100px;
+                    right: 38px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+    }
+
+}
