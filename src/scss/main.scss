@@ -1,11 +1,5 @@
 .main {
-
-    // .main__container
-
     &__container {
-
-        // .main__container_title
-
         &_title {
             display: flex;
             justify-content: space-between;
@@ -53,10 +47,7 @@
                     top: -75px;
                 }
             }
-
-
         }
-
 
         &_client {
             margin-top: 135px;
@@ -75,12 +66,12 @@
                 align-items: center;
                 gap: 60px;
             }
-
         }
 
         &_assistance {
-            margin-top: 455px;
+            margin-top: 94px;
             display: flex;
+            align-items: center;
 
             .asistance-title {
                 .rectangle-small {
@@ -88,6 +79,10 @@
                     top: 100px;
                     right: 38px;
                     transform: rotate(180deg);
+                }
+
+                & p {
+                    padding-top: 30px;
                 }
 
                 .dots-title {
@@ -98,6 +93,7 @@
             }
 
             .asistance-cards {
+
                 .rectangle-small {
                     transform: rotate(180deg);
                     position: absolute;
@@ -114,11 +110,17 @@
                     justify-content: flex-end;
                     gap: 34px;
                     flex-wrap: wrap;
-                    width: 80%;
+                    width: 90%;
                     position: relative;
                     top: -25%;
 
                     .card {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        gap: 30px;
                         width: 308px;
                         height: 379px;
                         border: 1px solid #F2F2F2;
@@ -129,6 +131,39 @@
                         &:nth-child(2n+1) {
                             position: relative;
                             top: 75px;
+                        }
+
+                        &_icon {
+                            display: flex;
+                            justify-content: center;
+                            width: 121px;
+                            height: 121px;
+                            border-radius: 20px;
+
+                            &.box {
+                                background-color: #F1F7FF;
+                            }
+
+                            &.wallet {
+                                background-color: #FFF7E3;
+                            }
+
+                            &.code {
+                                background-color: #FFF2F8;
+                            }
+
+                            &.chart {
+                                background-color: #DEFFEE;
+                            }
+                        }
+
+                        & h3 {
+                            width: 80%;
+                        }
+
+                        & p {
+                            color: #757575;
+                            line-height: 140%;
                         }
                     }
                 }
@@ -142,6 +177,52 @@
             }
         }
 
-    }
+        &_about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 120px;
 
+            .video__about {
+                &_content {
+                    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+                    border-radius: 32px;
+                    min-width: 100%;
+                    height: 100%;
+                }
+
+                .circle-small {
+                    position: absolute;
+                    left: 37%;
+                    margin-top: -60px;
+                }
+            }
+
+            .about-title {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .rectangle-small {
+                    position: absolute;
+                    background: #EFF1FF;
+                    margin-top: -35px;
+                    left: 52%;
+                }
+            }
+        }
+
+        &_clients {
+            margin-top: 117px;
+
+            .title-clients {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 17px;
+            }
+        }
+
+    }
 }

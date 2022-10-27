@@ -20,8 +20,14 @@ $blue:#2639ED;
 $lightBlue:#DAE9FF;
 $lightOrange: #FFF5DB;
 
-h1, h2 {
+h1,
+h2 {
     font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 a {
@@ -52,6 +58,11 @@ p {
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0.065em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        background-color: #00109e;
+    }
 }
 
 // Фигуры
