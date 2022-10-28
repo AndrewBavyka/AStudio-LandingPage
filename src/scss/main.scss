@@ -93,7 +93,6 @@
             }
 
             .asistance-cards {
-
                 .rectangle-small {
                     transform: rotate(180deg);
                     position: absolute;
@@ -102,7 +101,7 @@
                     height: 619px;
                     z-index: -1;
                     top: 1262px;
-                    background: #F4F9FF
+                    background: #f4f9ff;
                 }
 
                 .cards-container {
@@ -123,12 +122,12 @@
                         gap: 30px;
                         width: 308px;
                         height: 379px;
-                        border: 1px solid #F2F2F2;
+                        border: 1px solid #f2f2f2;
                         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
                         border-radius: 40px;
                         background-color: $white;
 
-                        &:nth-child(2n+1) {
+                        &:nth-child(2n + 1) {
                             position: relative;
                             top: 75px;
                         }
@@ -141,19 +140,19 @@
                             border-radius: 20px;
 
                             &.box {
-                                background-color: #F1F7FF;
+                                background-color: #f1f7ff;
                             }
 
                             &.wallet {
-                                background-color: #FFF7E3;
+                                background-color: #fff7e3;
                             }
 
                             &.code {
-                                background-color: #FFF2F8;
+                                background-color: #fff2f8;
                             }
 
                             &.chart {
-                                background-color: #DEFFEE;
+                                background-color: #deffee;
                             }
                         }
 
@@ -205,7 +204,7 @@
 
                 .rectangle-small {
                     position: absolute;
-                    background: #EFF1FF;
+                    background: #eff1ff;
                     margin-top: -35px;
                     left: 52%;
                 }
@@ -215,14 +214,49 @@
         &_clients {
             margin-top: 117px;
 
-            .title-clients {
+            .clients-title {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 gap: 17px;
             }
-        }
 
+            .clients__rewiev {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_main {
+                    display: flex;
+                    align-items: center;
+                    gap: 67px;
+                    margin-top: 113px;
+                    &_photo {
+                        filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+                        & img {
+                            border-radius: 500px 0px 500px 500px;
+                        }
+                    }
+                    &_text {
+                        .pagination {
+                            display: flex;
+                            align-items: center;
+                            padding-top: 40px;
+                            gap: 26px;
+                            .dots {
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                background-color: $lightBlue;
+                                &.active {
+                                    background-color: $blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
