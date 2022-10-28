@@ -41,7 +41,7 @@
                     object-fit: cover;
                 }
 
-                .rectangle-small {
+                .rectangle {
                     position: relative;
                     left: 60%;
                     top: -75px;
@@ -74,7 +74,7 @@
             align-items: center;
 
             .asistance-title {
-                .rectangle-small {
+                .rectangle {
                     position: relative;
                     top: 100px;
                     right: 38px;
@@ -93,14 +93,14 @@
             }
 
             .asistance-cards {
-                .rectangle-small {
+                .rectangle {
                     transform: rotate(180deg);
                     position: absolute;
                     right: 0;
                     width: 73.5%;
                     height: 619px;
                     z-index: -1;
-                    top: 1262px;
+                    top: 1145px;
                     background: #f4f9ff;
                 }
 
@@ -170,8 +170,8 @@
                 .pink-ellipse {
                     position: relative;
                     z-index: -2;
-                    top: -34%;
-                    left: 74%;
+                    left: 79%;
+                    top: -66px
                 }
             }
         }
@@ -181,6 +181,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 120px;
+            margin-top: 145px;
 
             .video__about {
                 &_content {
@@ -202,7 +203,7 @@
                 flex-direction: column;
                 gap: 30px;
 
-                .rectangle-small {
+                .rectangle {
                     position: absolute;
                     background: #eff1ff;
                     margin-top: -35px;
@@ -212,7 +213,7 @@
         }
 
         &_clients {
-            margin-top: 117px;
+            margin-top: 181px;
 
             .clients-title {
                 display: flex;
@@ -230,30 +231,112 @@
                 &_main {
                     display: flex;
                     align-items: center;
-                    gap: 67px;
                     margin-top: 113px;
+
                     &_photo {
                         filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+
                         & img {
+                            max-width: 389px;
                             border-radius: 500px 0px 500px 500px;
                         }
+
+                        .dots-rewiev {
+                            position: absolute;
+                            z-index: -1;
+                            left: 60%;
+                            top: -35px;
+                        }
+
+                        .pink-ellipse {
+                            position: absolute;
+                            z-index: -1;
+                            left: 5%;
+                            top: 280px;
+                        }
                     }
+
                     &_text {
+                        padding: 0 0 0 67px;
+
+                        & p {
+                            padding-top: 21px;
+                        }
+
                         .pagination {
                             display: flex;
                             align-items: center;
                             padding-top: 40px;
                             gap: 26px;
+
                             .dots {
                                 width: 16px;
                                 height: 16px;
                                 border-radius: 50%;
                                 background-color: $lightBlue;
+
                                 &.active {
                                     background-color: $blue;
                                 }
                             }
                         }
+                    }
+
+                    &_people {
+                        .circle-big {
+                            position: absolute;
+                            top: 2719px;
+                            right: 18%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_form {
+            margin-top: 148px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: url(@img/figure/form-bg.svg) no-repeat;
+            border-radius: 75px;
+            height: 292px;
+            padding: 0 98px 0 92px;
+
+            .dots-form {
+                position: absolute;
+                right: 90px;
+                top: 3295px;
+                z-index: -1;
+            }
+
+            .rectangle {
+                position: absolute;
+                top: 3500px;
+                transform: rotate(90deg);
+                left: 87px;
+            }
+
+            .form_title {
+                & p {
+                    padding-top: 17px;
+                }
+            }
+
+            .form-container {
+                & form {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 10px 10px 34px;
+                    background: #FFFFFF;
+                    border: 1px solid #F1F1F1;
+                    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+                    border-radius: 60px;
+
+                    .input-email {
+                        border: none;
                     }
                 }
             }

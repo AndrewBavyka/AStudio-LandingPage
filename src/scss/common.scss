@@ -60,6 +60,7 @@ p {
     letter-spacing: 0.065em;
     cursor: pointer;
     transition: 0.3s ease;
+
     &:hover {
         background-color: #00109e;
     }
@@ -74,6 +75,13 @@ p {
     z-index: -1;
 }
 
+.circle-big {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 .blue {
     background: $lightBlue;
 }
@@ -82,7 +90,7 @@ p {
     background: $lightOrange;
 }
 
-.rectangle-small {
+.rectangle {
     width: 178px;
     height: 178px;
     border-radius: 0px 0px 100px 0px;
