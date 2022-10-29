@@ -33,11 +33,16 @@ h3 {
 a {
     color: $blackFont;
     font-weight: bold;
+    text-decoration: none;
 }
 
 p {
     color: #565656;
     line-height: 160%;
+}
+
+li{
+    list-style-type: none;
 }
 
 .wrapper {
